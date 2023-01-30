@@ -44,14 +44,14 @@ Works in Edge 12+, Chrome 29+, Safari 9+, Firefox 28+.
 ```html
 
 <form>
-	<div id="captcha"></div>
+    <div id="captcha"></div>
 </form>
 
-<script src="cookieBar.min.js"></script>
+<script src="htmlCaptcha.min.js"></script>
 <script>
     new htmlCaptcha({
-		target: '#captcha'
-	});
+        target: '#captcha'
+    });
 </script>
 
 ```
