@@ -58,13 +58,13 @@ Works in Edge 12+, Chrome 29+, Safari 9+, Firefox 28+.
 
 ## Parameters
 
-There are 2 optional parameters in this plugin:
+There are 2 parameters in this plugin:
 
 ```js script
 
 new htmlCaptcha({
-    target: '#captcha',
-    debug: true		// Will show the valid code in console
+    target: '#captcha',	// Required
+    debug: true		// Optional, Will log the validation code in console
 });
 
 ```
