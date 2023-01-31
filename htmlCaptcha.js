@@ -4,7 +4,7 @@
  * Copyright (c) 2023 @louisho5
  * Under the MIT license.
  *
- * @version 0.1.0
+ * @version 0.2.0
  */
 
 class htmlCaptcha {
@@ -34,7 +34,8 @@ class htmlCaptcha {
         captchaValidIuput.setAttribute("type", "text");
         captchaValidIuput.setAttribute("id", "html-captcha-input");
         captchaValidIuput.setAttribute("required", "true");
-        captchaValidIuput.setAttribute("placeholder", "Enter the validation code");
+        captchaValidIuput.setAttribute("maxlength", "4");
+        captchaValidIuput.setAttribute("placeholder", "Enter valid code");
 
         captchaContainer.appendChild(captchaValidCode);
         captchaContainer.appendChild(captchaBtnRefresh);
@@ -115,5 +116,16 @@ class htmlCaptcha {
         captchaBtnRefresh.style.setProperty("padding", "0");
         captchaBtnRefresh.style.setProperty("margin", "auto 3px");
         captchaBtnRefresh.style.setProperty("cursor", "pointer");
+		captchaBtnRefresh.style.setProperty("-webkit-appearance", "none");
+		captchaBtnRefresh.style.setProperty("appearance", "none");
+		captchaValidIuput.style.setProperty("display", "flex");
+		captchaValidIuput.style.setProperty("font-size", "16px");
+		captchaValidIuput.style.setProperty("width", "130px");
+		captchaValidIuput.style.setProperty("height", "30px");
+		captchaValidIuput.style.setProperty("padding", "0 5px");
+		captchaValidIuput.style.setProperty("border", "1px solid lightgrey");
+		captchaValidIuput.style.setProperty("background", "white");
+		captchaValidIuput.style.setProperty("-webkit-appearance", "none");
+		captchaValidIuput.style.setProperty("appearance", "none");
     }
 }

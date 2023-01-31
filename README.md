@@ -69,6 +69,24 @@ new htmlCaptcha({
 
 ```
 
+## Styling
+
+It is possible to edit the CSS for all items:
+
+```css
+
+#html-captcha-canvas {
+	border: none !important;
+}
+#html-captcha-refresh {
+	border-radius: 0 !important;
+}
+#html-captcha-input {
+	color: red !important;
+}
+
+```
+
 ## License
 
 This plugin is under the MIT license.
