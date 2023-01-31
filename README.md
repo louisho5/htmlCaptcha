@@ -1,6 +1,6 @@
 # HTML Captcha
 
-Version 0.1.0
+Version 0.2.0
 
 ## Summary
 
@@ -76,13 +76,13 @@ It is possible to edit the CSS for all items:
 ```css
 
 #html-captcha-canvas {
-	border: none !important;
+    border: none !important;
 }
 #html-captcha-refresh {
-	border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 #html-captcha-input {
-	color: red !important;
+    color: red !important;
 }
 
 ```
