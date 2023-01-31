@@ -7,7 +7,7 @@ Version 0.2.0
 Generate a simple HTML Captcha in your form with single line of code. 
 
 * <strong>Super lightweight, less then 10KB</strong><br>
-* <strong>Vanilla JavaScript with no library required</strong><br>
+* <strong>No frameworks. No libraries.</strong><br>
 * <strong>Minimal and ease to use</strong><br>
 
 ## Author
