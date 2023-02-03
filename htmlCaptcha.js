@@ -4,7 +4,7 @@
  * Copyright (c) 2023 @louisho5
  * Under the MIT license.
  *
- * @version 0.2.0
+ * @version 0.3.0
  */
 
 class htmlCaptcha {
@@ -13,7 +13,11 @@ class htmlCaptcha {
         if (this.options.debug == undefined) {
             this.options.debug = false;
         }
+		if (this.options.placeholder == undefined) {
+            this.options.placeholder = 'Validation Code';
+        }
         if (this.options.target == undefined) {
+			console.log('[htmlCaptcha.js] Please assign a selector');
             return false;
         } else {
             this.init();
@@ -26,16 +30,16 @@ class htmlCaptcha {
         var captchaContainer = document.querySelector(this.options.target);
 
         var captchaValidCode = document.createElement('canvas');
-        captchaValidCode.setAttribute("id", "html-captcha-canvas");
+        captchaValidCode.setAttribute("class", "html-captcha-canvas");
         var captchaBtnRefresh = document.createElement('button');
-        captchaBtnRefresh.setAttribute("id", "html-captcha-refresh");
+        captchaBtnRefresh.setAttribute("class", "html-captcha-refresh");
         captchaBtnRefresh.textContent = "↻";
         var captchaValidIuput = document.createElement('input');
         captchaValidIuput.setAttribute("type", "text");
-        captchaValidIuput.setAttribute("id", "html-captcha-input");
+        captchaValidIuput.setAttribute("class", "html-captcha-input");
         captchaValidIuput.setAttribute("required", "true");
         captchaValidIuput.setAttribute("maxlength", "4");
-        captchaValidIuput.setAttribute("placeholder", "Enter valid code");
+        captchaValidIuput.setAttribute("placeholder", this.options.placeholder);
 
         captchaContainer.appendChild(captchaValidCode);
         captchaContainer.appendChild(captchaBtnRefresh);

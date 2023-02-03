@@ -1,6 +1,6 @@
 # HTML Captcha
 
-Version 0.2.0
+Version 0.3.0
 
 ## Summary
 
@@ -64,6 +64,7 @@ There are 2 parameters in this plugin:
 
 new htmlCaptcha({
     target: '#captcha',	// Required
+	placeholder: 'Enter valid code',	// Optional
     debug: true		// Optional, Will log the validation code in console
 });
 
