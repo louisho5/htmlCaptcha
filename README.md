@@ -64,7 +64,7 @@ There are 2 parameters in this plugin:
 
 new htmlCaptcha({
     target: '#captcha',	// Required
-	placeholder: 'Enter valid code',	// Optional
+    placeholder: 'Enter valid code',	// Optional
     debug: true		// Optional, Will log the validation code in console
 });
 
