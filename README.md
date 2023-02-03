@@ -76,13 +76,13 @@ It is possible to edit the CSS for all items:
 
 ```css
 
-#html-captcha-canvas {
+.html-captcha-canvas {
     border: none !important;
 }
-#html-captcha-refresh {
+.html-captcha-refresh {
     border-radius: 0 !important;
 }
-#html-captcha-input {
+.html-captcha-input {
     color: red !important;
 }
 
