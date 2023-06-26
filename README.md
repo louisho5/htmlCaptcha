@@ -72,7 +72,7 @@ new htmlCaptcha({
 
 ## Styling
 
-It is possible to edit the CSS for all items:
+It is possible to override the CSS for all items:
 
 ```css
 
